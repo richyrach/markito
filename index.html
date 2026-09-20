@@ -3,14 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Markito turns public market information into clear, timely signals.">
-  <title>Markito — Signals, not noise.</title>
+  <meta name="description" content="Markito watches public market information and surfaces the changes worth your attention.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="theme-color" content="#f6f7f4">
+  <meta property="og:title" content="Markito — Smarter information. Clearer decisions.">
+  <meta property="og:description" content="Public market signals without the noise.">
+  <meta property="og:image" content="assets/illustrations/hero-signal.png">
+  <title>Markito — Smarter information. Clearer decisions.</title>
+  <link rel="icon" href="assets/brand/mascot.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html"><img src="mascot.svg" alt="">Markito</a>
+    <a class="brand" href="index.html"><img src="assets/brand/mascot.svg" alt="">Markito</a>
     <nav class="nav-links" aria-label="Primary">
       <a href="features.html">Features</a>
       <a href="how-it-works.html">How it works</a>
@@ -19,9 +26,9 @@
       <a href="about.html">About</a>
     </nav>
     <div class="nav-actions">
-      <a class="btn btn-ghost" href="features.html">Explore</a>
-      <a class="btn btn-primary" href="how-it-works.html">Get started</a>
-      <button class="menu-btn" aria-label="Toggle menu">☰</button>
+      <a class="btn btn-quiet" href="features.html">Explore</a>
+      <a class="btn btn-dark" href="how-it-works.html">Get started</a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </div>
   </div>
 </header>
@@ -29,121 +36,152 @@
 <main>
   <section class="hero">
     <div class="container hero-grid">
-      <div>
-        <div class="eyebrow">Market intelligence, simplified</div>
-        <h1>Signals, <span style="color:var(--mint-dark)">not noise.</span></h1>
-        <p class="lede">Markito watches public news, filings, market activity and the things you care about — then surfaces what is actually worth your attention.</p>
+      <div class="hero-copy reveal">
+        <h1>Smarter information.<br>Clearer decisions.</h1>
+        <p class="lede">Markito watches public filings, market activity and news so you can spend less time checking and more time understanding what changed.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="how-it-works.html">See how Markito works →</a>
-          <a class="btn" href="features.html">Explore features</a>
+          <a class="btn btn-dark" href="features.html">Explore Markito <svg class="icon" aria-hidden="true"><use href="assets/icons/ui.svg#i-arrow"></use></svg></a>
+          <a class="btn btn-quiet" href="how-it-works.html"><span class="btn-icon">▶</span>See how it works</a>
         </div>
-        <div class="microcopy">
-          <span>Public information only</span>
-          <span>No dashboard clutter</span>
-          <span>Built for fast scanning</span>
+        <div class="hero-proof">
+          <span class="proof-item"><span class="proof-dot"></span>Public sources only</span>
+          <span class="proof-item"><span class="proof-dot"></span>Source attached</span>
+          <span class="proof-item"><span class="proof-dot"></span>No auto-trading</span>
         </div>
       </div>
-      <div class="hero-visual" aria-label="Markito mascot with example market alerts">
-        <div class="signal-card top">
-          <div class="signal-row"><span>SEC filing</span><span class="up">NEW</span></div>
-          <small>AAPL files a new 10-Q</small>
+
+      <div class="hero-stage reveal delay-1">
+        <div class="hero-media">
+          <img src="assets/illustrations/hero-signal.png" alt="Markito surrounded by market signal cards">
         </div>
-        <div class="mascot-wrap"><img src="mascot.svg" alt="Markito, a small black square mascot"></div>
-        <div class="signal-card bottom">
-          <div class="signal-row"><span>Unusual volume</span><span class="up">3.8×</span></div>
-          <small>Activity is above the recent average</small>
+        <div class="float-card one">
+          <div class="signal-pill"><span class="status-dot"></span>New filing</div>
+          <strong>AAPL · 8-K detected</strong>
+          <span>Official source · 18 sec ago</span>
+        </div>
+        <div class="float-card two">
+          <div class="signal-pill">Unusual activity</div>
+          <strong>TSLA volume 3.8× average</strong>
+          <span>Worth a second look</span>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="ticker-strip" aria-label="Example market strip">
-    <div class="container ticker-inner">
-      <div class="ticker"><strong>AAPL</strong><span>filings · news · volume</span></div>
-      <div class="ticker"><strong>BTC</strong><span>price · flows · headlines</span></div>
-      <div class="ticker"><strong>NVDA</strong><span>earnings · filings · activity</span></div>
-      <div class="ticker"><strong>TSLA</strong><span>news · volume · catalysts</span></div>
+  <div class="icon-strip">
+    <div class="container icon-strip-inner">
+      <div class="mini-feature">
+        <span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-file"></use></svg></span>
+        <div><strong>Filings</strong><span>Official disclosures</span></div>
+      </div>
+      <div class="mini-feature">
+        <span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-chart"></use></svg></span>
+        <div><strong>Market data</strong><span>Movement and activity</span></div>
+      </div>
+      <div class="mini-feature">
+        <span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-news"></use></svg></span>
+        <div><strong>News</strong><span>Relevant updates</span></div>
+      </div>
+      <div class="mini-feature">
+        <span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-bell"></use></svg></span>
+        <div><strong>Alerts</strong><span>Only when it matters</span></div>
+      </div>
     </div>
   </div>
 
   <section class="section">
     <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">How it works</div>
-          <h2>Three steps. Nothing weird.</h2>
-        </div>
-        <p>Markito is designed like a scanner, not a trading terminal. It watches, filters and explains; you decide what to do next.</p>
+      <div class="section-head reveal">
+        <h2>Built to notice what you miss.</h2>
+        <p>Markito is not another terminal full of blinking boxes. It is a focused layer between a noisy market and the information you actually care about.</p>
       </div>
-      <div class="steps">
-        <article class="step">
-          <div class="step-num">1</div>
-          <h3>Choose what matters</h3>
-          <p>Pick tickers, sectors, crypto assets or themes you want Markito to keep an eye on.</p>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div>
+            <span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-search"></use></svg></span>
+            <h3>Scan continuously</h3>
+          </div>
+          <p>Watch selected public sources without manually refreshing the same pages all day.</p>
         </article>
-        <article class="step">
-          <div class="step-num">2</div>
-          <h3>Markito scans</h3>
-          <p>Public sources are checked for filings, announcements, headlines, unusual activity and relevant changes.</p>
+        <article class="feature-card reveal delay-1">
+          <div>
+            <span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-filter"></use></svg></span>
+            <h3>Filter the noise</h3>
+          </div>
+          <p>Group repeats, reduce low-value updates and keep the original source close enough to verify.</p>
         </article>
-        <article class="step">
-          <div class="step-num">3</div>
-          <h3>You get the signal</h3>
-          <p>Important items become short, readable alerts with the original source kept one click away.</p>
+        <article class="feature-card reveal delay-2">
+          <div>
+            <span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-clock"></use></svg></span>
+            <h3>Review later</h3>
+          </div>
+          <p>Keep a history of what was detected so useful signals can be measured instead of remembered selectively.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section alt">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">Core features</div>
-          <h2>Useful things. Kept simple.</h2>
-        </div>
-        <a class="btn" href="features.html">View all features →</a>
-      </div>
-      <div class="cards">
-        <article class="card"><div class="card-icon">↗</div><h3>Market signals</h3><p>Surface meaningful changes without staring at ten tabs all day.</p><a class="card-link" href="features.html">Learn more →</a></article>
-        <article class="card"><div class="card-icon">≡</div><h3>News & filings</h3><p>Bring company updates and regulatory filings into one clean stream.</p><a class="card-link" href="sources.html">See sources →</a></article>
-        <article class="card"><div class="card-icon">▥</div><h3>Unusual activity</h3><p>Flag abnormal volume and other movement worth a second look.</p><a class="card-link" href="features.html">Learn more →</a></article>
-        <article class="card"><div class="card-icon">☆</div><h3>Watchlists</h3><p>Keep Markito focused on the companies and assets you actually care about.</p><a class="card-link" href="features.html">Learn more →</a></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
+  <section class="section white">
     <div class="container split">
-      <div>
-        <div class="kicker">Why Markito</div>
-        <h2>The internet is already full of market data.</h2>
-        <p class="lede">The problem is deciding what deserves your attention. Markito is built to reduce the amount of checking, scrolling and tab-hopping between you and the original source.</p>
-        <a class="btn btn-primary" href="about.html">Why we're building it →</a>
+      <div class="visual-card reveal">
+        <img src="assets/illustrations/filter-noise.png" loading="lazy" alt="Markito filtering noisy information into clear alerts">
       </div>
-      <div class="callout">
-        <div class="badge">Example signal flow</div>
-        <div class="callout-list">
-          <div class="callout-item"><span class="callout-dot"></span><div><strong>Source changes</strong><p>An official filing, company post or market-data condition changes.</p></div></div>
-          <div class="callout-item"><span class="callout-dot"></span><div><strong>Markito checks relevance</strong><p>Duplicates and low-value noise are filtered out.</p></div></div>
-          <div class="callout-item"><span class="callout-dot"></span><div><strong>You get context</strong><p>The alert explains what changed and links back to the source.</p></div></div>
+      <div class="reveal delay-1">
+        <h2>Less scrolling.<br>Better signals.</h2>
+        <p class="lede">Markito should get quieter as it learns what belongs in your watchlist. The goal is not to create more information. It is to make the important information harder to miss.</p>
+        <div class="content-list">
+          <div class="content-row">
+            <span class="round-check"><svg class="icon"><use href="assets/icons/ui.svg#i-check"></use></svg></span>
+            <div><strong>Clear timestamps</strong><p>Know when the source changed and when Markito noticed it.</p></div>
+          </div>
+          <div class="content-row">
+            <span class="round-check"><svg class="icon"><use href="assets/icons/ui.svg#i-check"></use></svg></span>
+            <div><strong>Source-first summaries</strong><p>Read the short version, then open the original when the detail matters.</p></div>
+          </div>
+          <div class="content-row">
+            <span class="round-check"><svg class="icon"><use href="assets/icons/ui.svg#i-check"></use></svg></span>
+            <div><strong>Human judgment stays in control</strong><p>Markito surfaces information. It does not pretend uncertainty disappeared.</p></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cta-band">
-    <div><div class="kicker">Early concept</div><h2>Want to see where Markito is going?</h2></div>
-    <a class="btn btn-primary" href="pricing.html">See the roadmap →</a>
+  <section class="section dark-band">
+    <div class="container dark-grid">
+      <div class="reveal">
+        <h2>Security should be boring.</h2>
+        <p class="lede">The marketing site stays static and deliberately simple. No user accounts, no secret keys in browser code and no unnecessary third-party scripts.</p>
+        <div class="content-list">
+          <div class="content-row"><span class="round-check"><svg class="icon"><use href="assets/icons/ui.svg#i-shield"></use></svg></span><div><strong>Minimal attack surface</strong><p>Plain HTML, CSS and JavaScript hosted over HTTPS.</p></div></div>
+          <div class="content-row"><span class="round-check"><svg class="icon"><use href="assets/icons/ui.svg#i-shield"></use></svg></span><div><strong>Restrictive browser policy</strong><p>The site only permits its own scripts, styles and images.</p></div></div>
+          <div class="content-row"><span class="round-check"><svg class="icon"><use href="assets/icons/ui.svg#i-shield"></use></svg></span><div><strong>Backend later, secrets there</strong><p>Scanner credentials belong on a server, never inside public frontend code.</p></div></div>
+        </div>
+      </div>
+      <div class="visual-card reveal delay-1">
+        <img src="assets/illustrations/security.png" loading="lazy" alt="Markito beside a security shield">
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>See how a signal goes from source to screen.</h2>
+    <a class="btn btn-dark" href="how-it-works.html">How it works <svg class="icon"><use href="assets/icons/ui.svg#i-arrow"></use></svg></a>
   </section>
 </main>
 
 <footer class="footer">
   <div class="container footer-inner">
-    <div><a class="brand" href="index.html"><img src="mascot.svg" alt="">Markito</a><div class="legal">Public-market intelligence concept. Not financial advice.</div></div>
-    <nav class="footer-nav"><a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a href="sources.html">Sources</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></nav>
+    <div class="footer-copy">
+      <a class="brand" href="index.html"><img src="assets/brand/mascot.svg" alt="">Markito</a>
+      <span class="legal">Public-market intelligence concept. Not financial advice.</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a href="sources.html">Sources</a><a href="pricing.html">Pricing</a><a href="about.html">About</a>
+    </nav>
   </div>
 </footer>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3.75h6.5L18.25 8.5V20.25H7zM13.5 3.75V8.5h4.75M9.5 12h6M9.5 15h6M9.5 18h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 18.5h16M6.5 16V12M11 16V8M15.5 16V10M20 16V5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-news" viewBox="0 0 24 24"><path d="M5 6.25h11.5v12.5H5zM16.5 9h2.5v8.25c0 .83-.67 1.5-1.5 1.5h-1M7.75 9h6M7.75 12h6M7.75 15h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M7 10.5a5 5 0 0 1 10 0v3.4l1.5 2.35h-13L7 13.9zM10 18.25a2.15 2.15 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 4 2.27 4.6 5.08.74-3.67 3.58.87 5.06L12 15.6l-4.55 2.38.87-5.06-3.67-3.58 5.08-.74z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.75 18.5 6v5.25c0 4.1-2.7 7.15-6.5 9-3.8-1.85-6.5-4.9-6.5-9V6zM9.6 12.1l1.55 1.55 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.9 12h16.2M12 3.75c2.3 2.2 3.45 4.95 3.45 8.25S14.3 18.05 12 20.25M12 3.75C9.7 5.95 8.55 8.7 8.55 12S9.7 18.05 12 20.25" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.4v5l3.25 1.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.75" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m15 15 4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 5.5h16l-6.2 7v4.75l-3.6 1.75v-6.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M14 8l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m6.5 12.3 3.4 3.4 7.6-7.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m13.2 3.7-4.7 7h4l-1.7 9.6 4.7-7h-4z" fill="currentColor"/></symbol>
+</svg>

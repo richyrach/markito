@@ -2,60 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Planned Markito pricing and roadmap.">
-  <title>Pricing — Markito</title><link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Planned Markito pricing and product tiers.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="theme-color" content="#f6f7f4">
+  <title>Pricing — Markito</title>
+  <link rel="icon" href="assets/brand/mascot.svg"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header"><div class="container nav">
-  <a class="brand" href="index.html"><img src="mascot.svg" alt="">Markito</a>
+  <a class="brand" href="index.html"><img src="assets/brand/mascot.svg" alt="">Markito</a>
   <nav class="nav-links" aria-label="Primary">
     <a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a href="sources.html">Sources</a><a class="active" href="pricing.html">Pricing</a><a href="about.html">About</a>
   </nav>
-  <div class="nav-actions"><a class="btn btn-ghost" href="index.html">Home</a><a class="btn btn-primary" href="#plans">See plans</a><button class="menu-btn" aria-label="Toggle menu">☰</button></div>
+  <div class="nav-actions"><a class="btn btn-quiet" href="index.html">Home</a><a class="btn btn-dark" href="#plans">See plans</a><button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button></div>
 </div></header>
+
 <main>
-  <section class="page-hero"><div class="container">
-    <div class="eyebrow">Pricing</div>
-    <h1>Simple plans.<br>No fake urgency.</h1>
-    <p class="lede">Markito is still an early concept, so these are placeholder product tiers rather than a live checkout. The point is to define what belongs in each version before building billing.</p>
+  <section class="page-hero"><div class="container reveal">
+    <h1>Simple plans.<br>No fake countdown timer.</h1>
+    <p class="lede">Markito is still being built. These tiers describe the product direction rather than a live checkout.</p>
   </div></section>
 
   <section class="section" id="plans"><div class="container">
     <div class="pricing-grid">
-      <article class="card price-card">
-        <span class="badge">Planned</span><h3 style="margin-top:18px">Free</h3><div class="price">$0 <small>/ month</small></div>
-        <p>For testing the basic idea.</p>
-        <ul class="list"><li>Small watchlist</li><li>Daily digest</li><li>Major public news</li><li>Basic filing alerts</li></ul>
+      <article class="price-card reveal">
+        <span class="plan-label">Preview</span><h3>Free</h3><div class="price">$0 <small>/ month</small></div><p class="note">For learning the product and testing the signal model.</p>
+        <ul class="list">
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Small watchlist</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Daily digest</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Major filing alerts</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Core public sources</li>
+        </ul>
         <a class="btn" href="features.html">Explore features</a>
       </article>
-      <article class="card price-card featured">
-        <span class="badge">Planned</span><h3 style="margin-top:18px">Plus</h3><div class="price">$12 <small>/ month</small></div>
-        <p>For people who want faster, more configurable monitoring.</p>
-        <ul class="list"><li>Larger watchlists</li><li>Real-time alert rules</li><li>Unusual-volume monitoring</li><li>Signal history</li><li>Custom source groups</li></ul>
-        <a class="btn btn-primary" href="how-it-works.html">See how it works</a>
+
+      <article class="price-card featured reveal delay-1">
+        <span class="plan-label">Planned</span><h3>Plus</h3><div class="price">$12 <small>/ month</small></div><p class="note">For people who want faster and more configurable monitoring.</p>
+        <ul class="list">
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Larger watchlists</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Real-time alert rules</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Unusual activity monitoring</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Signal history</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Custom source groups</li>
+        </ul>
+        <a class="btn btn-dark" href="how-it-works.html">See how it works</a>
       </article>
-      <article class="card price-card">
-        <span class="badge">Later</span><h3 style="margin-top:18px">Research</h3><div class="price">TBD</div>
-        <p>For deeper review and data export once the core scanner works reliably.</p>
-        <ul class="list"><li>Longer history</li><li>Signal exports</li><li>Shared watchlists</li><li>Advanced source controls</li></ul>
+
+      <article class="price-card reveal delay-2">
+        <span class="plan-label">Later</span><h3>Research</h3><div class="price">TBD</div><p class="note">For deeper review once the core scanner is reliable.</p>
+        <ul class="list">
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Longer history</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Signal exports</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Shared watchlists</li>
+          <li><svg><use href="assets/icons/ui.svg#i-check"></use></svg>Advanced source controls</li>
+        </ul>
         <a class="btn" href="about.html">Read the philosophy</a>
       </article>
     </div>
-    <p class="note" style="margin-top:18px">Pricing is a product-direction mockup and is not currently an offer for sale.</p>
+    <p class="note">Pricing is a product-direction mockup and is not currently an offer for sale.</p>
   </div></section>
 
-  <section class="section alt"><div class="container">
-    <div class="section-head"><div><div class="kicker">FAQ</div><h2>Stuff worth clarifying.</h2></div></div>
+  <section class="section white"><div class="container">
+    <div class="section-head reveal"><h2>Things worth saying clearly.</h2></div>
     <div class="faq">
-      <div class="faq-item"><button class="faq-question">Can Markito place trades for me?<span data-mark>+</span></button><div class="faq-answer">Not in the early product. The first goal is monitoring, source transparency and paper-trade experimentation, not automatic real-money execution.</div></div>
-      <div class="faq-item"><button class="faq-question">Does Markito use private or insider information?<span data-mark>+</span></button><div class="faq-answer">No. The concept is built around lawful public sources and public market data.</div></div>
-      <div class="faq-item"><button class="faq-question">Are the alerts financial advice?<span data-mark>+</span></button><div class="faq-answer">No. Alerts surface information and context. A signal can be wrong, irrelevant or already reflected in price.</div></div>
-      <div class="faq-item"><button class="faq-question">Why no giant dashboard?<span data-mark>+</span></button><div class="faq-answer">Because the product is supposed to reduce monitoring work, not give you another wall of charts to babysit.</div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false">Can Markito place trades for me?<span data-mark>+</span></button><div class="faq-answer">Not in the early product. The first goal is monitoring, source transparency and paper-trade experimentation rather than automatic real-money execution.</div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false">Does Markito use private information?<span data-mark>+</span></button><div class="faq-answer">No. The concept is designed around lawful public sources and public market data.</div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false">Are alerts financial advice?<span data-mark>+</span></button><div class="faq-answer">No. Alerts surface information and context. Markets remain uncertain and a signal can be wrong, irrelevant or already reflected in price.</div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false">Why no giant dashboard?<span data-mark>+</span></button><div class="faq-answer">Because the product is supposed to reduce monitoring work, not give you another wall of charts to babysit.</div></div>
     </div>
   </div></section>
 </main>
+
 <footer class="footer"><div class="container footer-inner">
-  <div><a class="brand" href="index.html"><img src="mascot.svg" alt="">Markito</a><div class="legal">Public-market intelligence concept. Not financial advice.</div></div>
+  <div class="footer-copy"><a class="brand" href="index.html"><img src="assets/brand/mascot.svg" alt="">Markito</a><span class="legal">Public-market intelligence concept. Not financial advice.</span></div>
   <nav class="footer-nav"><a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a href="sources.html">Sources</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></nav>
-</div></footer><script src="script.js"></script>
+</div></footer>
+<script src="script.js" defer></script>
 </body></html>

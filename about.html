@@ -2,50 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Why Markito exists and how the product is being approached.">
-  <title>About — Markito</title><link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Why Markito exists and the product principles behind it.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="theme-color" content="#f6f7f4">
+  <title>About — Markito</title>
+  <link rel="icon" href="assets/brand/mascot.svg"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header"><div class="container nav">
-  <a class="brand" href="index.html"><img src="mascot.svg" alt="">Markito</a>
+  <a class="brand" href="index.html"><img src="assets/brand/mascot.svg" alt="">Markito</a>
   <nav class="nav-links" aria-label="Primary">
     <a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a href="sources.html">Sources</a><a href="pricing.html">Pricing</a><a class="active" href="about.html">About</a>
   </nav>
-  <div class="nav-actions"><a class="btn btn-ghost" href="index.html">Home</a><a class="btn btn-primary" href="features.html">Explore features</a><button class="menu-btn" aria-label="Toggle menu">☰</button></div>
+  <div class="nav-actions"><a class="btn btn-quiet" href="index.html">Home</a><a class="btn btn-dark" href="features.html">Explore features</a><button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button></div>
 </div></header>
+
 <main>
-  <section class="page-hero"><div class="container">
-    <div class="eyebrow">About</div>
-    <h1>A tiny bot with<br>a very specific job.</h1>
-    <p class="lede">Markito started from a simple thought: if you're already online all day, a machine should be able to handle the repetitive checking and leave the judgment to you.</p>
+  <section class="page-hero"><div class="container reveal">
+    <h1>A tiny bot with<br>one very specific job.</h1>
+    <p class="lede">Watch more public information than one person reasonably can. Then tell that person less.</p>
   </div></section>
 
-  <section class="section"><div class="container about-grid">
-    <aside class="quote-block">
-      <img src="mascot.svg" alt="Markito mascot" style="width:170px;margin:0 auto 24px">
-      <p>“Watch more sources than a person reasonably can. Then tell the person less.”</p>
-      <span style="color:#aeb9b3">That is the whole product thesis.</span>
+  <section class="section"><div class="container about-layout">
+    <aside class="about-card reveal">
+      <img src="assets/brand/mascot.svg" alt="Markito mascot">
+      <h3>Markito</h3>
+      <p class="lede">Black square. Two eyes. One line for a mouth. No need to turn him into a corporate robot.</p>
     </aside>
-    <div>
-      <div class="kicker">Product principles</div><h2>What Markito should feel like.</h2>
+
+    <div class="reveal delay-1">
+      <h2>What the product should feel like.</h2>
       <div class="principles">
-        <div class="principle"><h3>Quiet by default</h3><p>Alerts should earn the interruption. Everything else can wait for a digest.</p></div>
-        <div class="principle"><h3>Source-aware</h3><p>An official disclosure, professional report and social post should never be presented as if they carry identical evidentiary weight.</p></div>
-        <div class="principle"><h3>Human in the loop</h3><p>Markito can detect, organize and summarize. It should not pretend to eliminate the need for judgment.</p></div>
-        <div class="principle"><h3>Measurable</h3><p>Signals should be logged so usefulness can be tested later instead of judged by a couple of memorable wins.</p></div>
-        <div class="principle"><h3>No fake sophistication</h3><p>No pointless dashboards, fabricated “AI confidence” meters or dozens of indicators just to make the product look expensive.</p></div>
+        <div class="principle"><h3>Quiet by default</h3><p>Alerts should earn the interruption. Everything else can wait.</p></div>
+        <div class="principle"><h3>Source-aware</h3><p>An official filing, professional report and social post should never look equivalent.</p></div>
+        <div class="principle"><h3>Human in the loop</h3><p>Markito can detect, organize and summarize. Judgment still belongs to the person using it.</p></div>
+        <div class="principle"><h3>Measurable</h3><p>Signals should be logged so usefulness can be tested instead of judged from memorable wins.</p></div>
+        <div class="principle"><h3>No fake sophistication</h3><p>No fabricated confidence meters, pointless dashboards or fifty indicators just to look expensive.</p></div>
       </div>
     </div>
   </div></section>
 
-  <section class="section alt"><div class="container split">
-    <div><div class="kicker">Mascot</div><h2>Yep, he's literally a black square.</h2><p class="lede">Two eyes. One line for a mouth. That is enough. The visual identity stays deliberately simple so Markito feels like a useful little tool instead of another over-designed finance platform.</p></div>
-    <div class="hero-visual" style="min-height:330px"><div class="mascot-wrap" style="width:240px"><img src="mascot.svg" alt="Markito mascot"></div></div>
+  <section class="section white"><div class="container split">
+    <div class="visual-card reveal"><img src="assets/illustrations/hero-signal.png" loading="lazy" alt="Markito with market signal cards"></div>
+    <div class="reveal delay-1">
+      <h2>Simple on the surface.<br>Serious underneath.</h2>
+      <p class="lede">The brand can stay playful while the system underneath remains disciplined about timestamps, source quality, security and testing whether an alert was actually useful.</p>
+      <a class="btn btn-dark" href="sources.html">Explore sources <svg class="icon"><use href="assets/icons/ui.svg#i-arrow"></use></svg></a>
+    </div>
   </div></section>
-  <section class="cta-band"><div><div class="kicker">Build order</div><h2>Scanner first. Fancy stuff later.</h2></div><a class="btn btn-primary" href="how-it-works.html">See the system →</a></section>
+
+  <section class="cta"><h2>Scanner first. Fancy stuff later.</h2><a class="btn btn-dark" href="how-it-works.html">See the system <svg class="icon"><use href="assets/icons/ui.svg#i-arrow"></use></svg></a></section>
 </main>
+
 <footer class="footer"><div class="container footer-inner">
-  <div><a class="brand" href="index.html"><img src="mascot.svg" alt="">Markito</a><div class="legal">Public-market intelligence concept. Not financial advice.</div></div>
+  <div class="footer-copy"><a class="brand" href="index.html"><img src="assets/brand/mascot.svg" alt="">Markito</a><span class="legal">Public-market intelligence concept. Not financial advice.</span></div>
   <nav class="footer-nav"><a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a href="sources.html">Sources</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></nav>
-</div></footer><script src="script.js"></script>
+</div></footer>
+<script src="script.js" defer></script>
 </body></html>

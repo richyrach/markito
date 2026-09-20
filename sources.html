@@ -3,52 +3,62 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="The public source types Markito is designed to monitor.">
-  <title>Sources — Markito</title><link rel="stylesheet" href="styles.css">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="theme-color" content="#f6f7f4">
+  <title>Sources — Markito</title>
+  <link rel="icon" href="assets/brand/mascot.svg"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header"><div class="container nav">
-  <a class="brand" href="index.html"><img src="mascot.svg" alt="">Markito</a>
+  <a class="brand" href="index.html"><img src="assets/brand/mascot.svg" alt="">Markito</a>
   <nav class="nav-links" aria-label="Primary">
     <a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a class="active" href="sources.html">Sources</a><a href="pricing.html">Pricing</a><a href="about.html">About</a>
   </nav>
-  <div class="nav-actions"><a class="btn btn-ghost" href="index.html">Home</a><a class="btn btn-primary" href="how-it-works.html">Signal flow</a><button class="menu-btn" aria-label="Toggle menu">☰</button></div>
+  <div class="nav-actions"><a class="btn btn-quiet" href="index.html">Home</a><a class="btn btn-dark" href="how-it-works.html">Signal flow</a><button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button></div>
 </div></header>
+
 <main>
-  <section class="page-hero"><div class="container">
-    <div class="eyebrow">Sources</div>
-    <h1>Public first.<br>Source attached.</h1>
-    <p class="lede">Markito should make it easier to notice information without hiding where it came from. Every important alert should preserve a timestamp and a path back to the original public source.</p>
-  </div></section>
+  <section class="page-hero">
+    <div class="container">
+      <div class="reveal">
+        <h1>Public first.<br>Source attached.</h1>
+        <p class="lede">Markito should make information easier to notice without hiding where it came from or pretending every source deserves equal weight.</p>
+      </div>
+      <div class="page-visual reveal delay-1"><img src="assets/illustrations/source-orbit.png" alt="Markito monitoring multiple information sources"></div>
+    </div>
+  </section>
 
   <section class="section"><div class="container">
     <div class="source-grid">
-      <article class="card source-card"><div class="card-icon">§</div><h3>Regulatory filings</h3><p>Company filings and official disclosure systems, including new forms and meaningful changes between versions.</p></article>
-      <article class="card source-card"><div class="card-icon">◫</div><h3>Investor relations</h3><p>Company announcements, earnings materials, presentations and other first-party public updates.</p></article>
-      <article class="card source-card"><div class="card-icon">⌁</div><h3>Market data</h3><p>Price, volume and other public data used to detect abnormal movement relative to recent conditions.</p></article>
-      <article class="card source-card"><div class="card-icon">N</div><h3>News</h3><p>Selected public news sources, normalized so repeated reporting of the same event does not become alert spam.</p></article>
-      <article class="card source-card"><div class="card-icon">◎</div><h3>Project & exchange updates</h3><p>For crypto and technology: public status pages, release notes, repository releases and official exchange notices where appropriate.</p></article>
-      <article class="card source-card"><div class="card-icon">@</div><h3>Public social sources</h3><p>Selected public accounts or communities can provide context, but should be labeled separately from official disclosures.</p></article>
+      <article class="source-card reveal"><span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-file"></use></svg></span><h3>Regulatory filings</h3><p>Official disclosure systems, new forms and meaningful changes between versions.</p></article>
+      <article class="source-card reveal delay-1"><span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-news"></use></svg></span><h3>Investor relations</h3><p>Company announcements, earnings materials, presentations and first-party updates.</p></article>
+      <article class="source-card reveal delay-2"><span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-chart"></use></svg></span><h3>Market data</h3><p>Price, volume and public activity data used to identify unusual movement.</p></article>
+      <article class="source-card reveal"><span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-globe"></use></svg></span><h3>Professional news</h3><p>Selected reporting sources, grouped so one event does not become ten alerts.</p></article>
+      <article class="source-card reveal delay-1"><span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-spark"></use></svg></span><h3>Project & exchange updates</h3><p>Public status pages, release notes and official notices where they add useful context.</p></article>
+      <article class="source-card reveal delay-2"><span class="icon-tile"><svg class="icon"><use href="assets/icons/ui.svg#i-search"></use></svg></span><h3>Public social context</h3><p>Selected public accounts or communities, clearly separated from primary disclosures.</p></article>
     </div>
   </div></section>
 
-  <section class="section alt"><div class="container split">
-    <div>
-      <div class="kicker">Source hierarchy</div><h2>Not every source deserves the same weight.</h2>
-      <p class="lede">An official filing is different from a repost, rumor or anonymous comment. Markito should show that distinction instead of blending everything into one confidence-looking score.</p>
-    </div>
-    <div class="callout">
-      <div class="callout-list">
-        <div class="callout-item"><span class="callout-dot"></span><div><strong>Primary</strong><p>Regulators, issuers, exchanges and first-party announcements.</p></div></div>
-        <div class="callout-item"><span class="callout-dot"></span><div><strong>Secondary</strong><p>Professional reporting and structured market-data providers.</p></div></div>
-        <div class="callout-item"><span class="callout-dot"></span><div><strong>Contextual</strong><p>Public communities and social sources, clearly labeled and verified where possible.</p></div></div>
+  <section class="section dark-band"><div class="container dark-grid">
+    <div class="reveal">
+      <h2>Not every source gets the same weight.</h2>
+      <p class="lede">An official filing, a news report and a social post should never collapse into one mysterious “AI confidence” score.</p>
+      <div class="content-list">
+        <div class="content-row"><span class="round-check"><svg class="icon"><use href="assets/icons/ui.svg#i-check"></use></svg></span><div><strong>Primary</strong><p>Regulators, issuers, exchanges and first-party announcements.</p></div></div>
+        <div class="content-row"><span class="round-check"><svg class="icon"><use href="assets/icons/ui.svg#i-check"></use></svg></span><div><strong>Secondary</strong><p>Professional reporting and structured market-data providers.</p></div></div>
+        <div class="content-row"><span class="round-check"><svg class="icon"><use href="assets/icons/ui.svg#i-check"></use></svg></span><div><strong>Contextual</strong><p>Public communities and social sources, labeled for what they are.</p></div></div>
       </div>
     </div>
+    <div class="visual-card reveal delay-1"><img src="assets/illustrations/security.png" loading="lazy" alt="Markito beside a secure source network"></div>
   </div></section>
 
-  <section class="cta-band"><div><div class="kicker">Principle</div><h2>Summarize the source. Never replace it.</h2></div><a class="btn btn-primary" href="about.html">About Markito →</a></section>
+  <section class="cta"><h2>Summarize the source. Never replace it.</h2><a class="btn btn-dark" href="about.html">Why Markito exists <svg class="icon"><use href="assets/icons/ui.svg#i-arrow"></use></svg></a></section>
 </main>
+
 <footer class="footer"><div class="container footer-inner">
-  <div><a class="brand" href="index.html"><img src="mascot.svg" alt="">Markito</a><div class="legal">Public-market intelligence concept. Not financial advice.</div></div>
+  <div class="footer-copy"><a class="brand" href="index.html"><img src="assets/brand/mascot.svg" alt="">Markito</a><span class="legal">Public-market intelligence concept. Not financial advice.</span></div>
   <nav class="footer-nav"><a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a href="sources.html">Sources</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></nav>
-</div></footer><script src="script.js"></script>
+</div></footer>
+<script src="script.js" defer></script>
 </body></html>
